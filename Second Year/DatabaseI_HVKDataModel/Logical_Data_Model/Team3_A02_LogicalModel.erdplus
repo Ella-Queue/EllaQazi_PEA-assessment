@@ -1,0 +1,1759 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "49c685c7-6b43-4c59-b16b-7e8394ed87b0",
+        "type": "Table",
+        "position": {
+          "x": 703.698382435349,
+          "y": 210.9860132131421
+        },
+        "data": {
+          "label": "AdditionalItems",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "25f74941-d011-44e7-bb12-36a3ffbcb9e6",
+              "name": "ItemId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_73309467-39ef-419a-b7dd-9355baba434d",
+              "name": "fk_Reservation Pet",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "7279a8f0-5442-4576-9a2c-614f865dc07c",
+                "sourceTableId": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+                "columns": [
+                  {
+                    "id": "fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                    "name": "ReservationId",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 92
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "12511030-e9aa-4e98-86fd-420e896a067a",
+        "type": "Table",
+        "position": {
+          "x": 1186.9588960100432,
+          "y": -148.55456762909603
+        },
+        "data": {
+          "label": "Customer",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_dfce661e-6621-4ed5-92a9-05a6dd90f3e6",
+              "name": "fk_User",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "29e104ea-f2d7-4732-ae6d-5e0f09f19265",
+                "sourceTableId": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+                "columns": [
+                  {
+                    "id": "fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                    "name": "UserId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "afd47364-7fd9-4f0e-b7b3-58f347565fe7",
+              "name": "Address",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "e8b26e76-7ad6-46c6-905d-3f4656ba4413",
+              "name": "City",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "749485b1-8d1f-4c31-b6df-11711296b0a6",
+              "name": "Postal Code",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "d461aab4-5706-4c2c-afc8-345abd148e4c",
+              "name": "Country",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "4e4428e3-ab27-42ed-8f3e-94977c38a8c0",
+              "name": "Province",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 175
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "cc308112-a3fc-431a-b120-773cff140e7a",
+        "type": "Table",
+        "position": {
+          "x": 434.35662313262725,
+          "y": -72.69058415779863
+        },
+        "data": {
+          "label": "Invoice",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_3a301693-1cca-4090-af1b-bd60173c4d3e",
+              "name": "fk_Reservation",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "663ad40e-5860-45a5-a859-23835927f342",
+                "sourceTableId": "47d289d0-e965-4bb3-a96e-5c2bc887e305",
+                "columns": [
+                  {
+                    "id": "fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                    "name": "ReservationId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 52
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "47d289d0-e965-4bb3-a96e-5c2bc887e305",
+        "type": "Table",
+        "position": {
+          "x": 705.7131947659033,
+          "y": -71.69731696084605
+        },
+        "data": {
+          "label": "Reservation",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+              "name": "ReservationId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 51
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "type": "Table",
+        "position": {
+          "x": 1011.6110818904197,
+          "y": 52.67980841312658
+        },
+        "data": {
+          "label": "ReservationPet",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_21bc30f2-787e-445d-a747-eead26d98078",
+              "name": "fk_Reservation",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "095544ed-0dcf-4393-b962-77be37d86f80",
+                "sourceTableId": "47d289d0-e965-4bb3-a96e-5c2bc887e305",
+                "columns": [
+                  {
+                    "id": "fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                    "name": "ReservationId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_cac760c9-8ab0-46b9-a30b-45255adccbee",
+              "name": "fk_Food",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "c759ef16-6729-4541-b0ba-dd60a16798c6",
+                "sourceTableId": "b2702adb-7553-4b77-b2da-e7b1851b53da",
+                "columns": [
+                  {
+                    "id": "fk_336dc3ad-8831-4d51-85c5-bf16c320b89b",
+                    "name": "FoodId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_a715d4f3-827b-4e0d-972a-dee5a295245a",
+              "name": "fk_Pet",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "cfaef9e4-f4b2-4035-a767-08be4248d776",
+                "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+                "columns": [
+                  {
+                    "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_10e196b1-a780-4662-a5ee-4f48859c3e2d",
+              "name": "fk_Housing",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "0d110e21-8d0c-4801-ac2b-9568aef9ae10",
+                "sourceTableId": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+                "columns": [
+                  {
+                    "id": "fk_9c759ca7-e1d7-461d-b102-3c1f4636ceda",
+                    "name": "HousingId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 126
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "68ee34bb-324e-45f9-93cf-6184373ed0bf",
+        "type": "Table",
+        "position": {
+          "x": 1859.4040066044047,
+          "y": -272.26413862982906
+        },
+        "data": {
+          "label": "Vaccination",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "7197c0ba-4781-4196-baf4-873c92f7cb5e",
+              "name": "VaccinationId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "1c71dfd5-2ebf-438a-871c-a9e7becd60ef",
+              "name": "Name",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "b6309151-2ffd-4128-8276-eb1078df1f4b",
+              "name": "Type",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 100
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "b2702adb-7553-4b77-b2da-e7b1851b53da",
+        "type": "Table",
+        "position": {
+          "x": 1007.9052262317227,
+          "y": 219.25026763877838
+        },
+        "data": {
+          "label": "Food",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "336dc3ad-8831-4d51-85c5-bf16c320b89b",
+              "name": "FoodId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "9a7e6ecb-8c75-4236-ac9f-00620bae5cb9",
+              "name": "Type",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "1c7632bd-fd86-4e77-8f61-801b1df0a674",
+              "name": "Brand",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "3968aa6e-fc2c-4145-89b6-7eb59ac81eea",
+              "name": "Name",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 125
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+        "type": "Table",
+        "position": {
+          "x": 1488.023757571061,
+          "y": -0.29657526150371183
+        },
+        "data": {
+          "label": "Pet",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fa4488b7-cf89-4c3a-af61-9561d807735b",
+              "name": "PetId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_401c36b2-cfba-44b6-939e-3b9490e16b55",
+              "name": "fk_Customer",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "409e37f9-983b-4adc-98a3-acb91e844fcc",
+                "sourceTableId": "12511030-e9aa-4e98-86fd-420e896a067a",
+                "columns": [
+                  {
+                    "id": "fk_fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                    "name": "UserId",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "d1eb3f75-f422-40a8-bc6c-17c5ee0505fa",
+              "name": "Name",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "bc4b19a2-11d2-4788-8bb0-e8de3815f4af",
+              "name": "Type",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 126
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+        "type": "Table",
+        "position": {
+          "x": 1183.3686288826827,
+          "y": -311.8982263324864
+        },
+        "data": {
+          "label": "User",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+              "name": "UserId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "c3fe4743-21a0-4e32-9c91-b13be11e5959",
+              "name": "Username",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "4ce22172-51b9-4869-8281-25a452e176d1",
+              "name": "FirstName",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "e03ab0e0-808d-4ed6-ae83-d8ad7f04e45d",
+              "name": "LastName",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "444bd4da-4dab-4e4c-abab-605a30f0f899",
+              "name": "Type",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 150
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4d5bf7be-06fa-4846-bf5e-0fcf687d9c07",
+        "type": "Table",
+        "position": {
+          "x": 882.1457129823089,
+          "y": -282.09582241580625
+        },
+        "data": {
+          "label": "Employee",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_2dd554cc-6929-488d-a19c-ec435df4a8c5",
+              "name": "fk_User",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "e1184450-ffb7-4b80-80ab-fda72c7464f0",
+                "sourceTableId": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+                "columns": [
+                  {
+                    "id": "fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                    "name": "UserId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 52
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "fae923a4-00a1-4ed3-abe1-a9309b2429fe",
+        "type": "Table",
+        "position": {
+          "x": 882.5382339304848,
+          "y": -210.37438500123432
+        },
+        "data": {
+          "label": "Owner",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_c7b7243d-63ed-4e50-a087-196b432bbd69",
+              "name": "fk_User",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "0bfb23d0-1cb8-421d-b449-042fe0bc5b94",
+                "sourceTableId": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+                "columns": [
+                  {
+                    "id": "fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                    "name": "UserId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 52
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "ee31f18e-6122-4018-adcc-aa1fd38a81eb",
+        "type": "Table",
+        "position": {
+          "x": 1855.1648614195256,
+          "y": -120.2147498298191
+        },
+        "data": {
+          "label": "Dog",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_c2a21338-742a-4f74-9d85-ea349b7653a2",
+              "name": "fk_Pet",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "7caed885-e4df-460f-a472-a751f939d085",
+                "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+                "columns": [
+                  {
+                    "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "8ed7df35-1cb4-46ce-8398-0cad4090b222",
+              "name": "Breed",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "0b4994a1-2555-40ba-ade9-2e3d23fbea10",
+              "name": "BirthDate",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "8d43a276-2834-4dec-83ac-082ffde60299",
+              "name": "Sex",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "4118ccc8-e97b-483b-8bee-bd080c3981e4",
+              "name": "Size",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 150
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "7d636325-7ce8-4eb8-8db7-7cddc06c487e",
+        "type": "Table",
+        "position": {
+          "x": 1859.2262856630814,
+          "y": 56.04828081742785
+        },
+        "data": {
+          "label": "Cat",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_39cf9326-ff90-4a1d-980f-7975a465bbc6",
+              "name": "fk_Pet",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "2f815479-3395-4a4a-a9b6-7f9f67acbb25",
+                "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+                "columns": [
+                  {
+                    "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "f3af6ecf-d7ab-4b1c-9eb9-6b9e48d83f28",
+              "name": "Type",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "a6c13b55-d90c-484e-b57f-8460bebc0b94",
+              "name": "isLitterTrained",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 101
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+        "type": "Table",
+        "position": {
+          "x": 1315.117863804586,
+          "y": 225.89667229644786
+        },
+        "data": {
+          "label": "Housing",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "9c759ca7-e1d7-461d-b102-3c1f4636ceda",
+              "name": "HousingId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 51
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "eead93d4-eb57-4bb2-b1bc-c8e08a824498",
+        "type": "Table",
+        "position": {
+          "x": 1653.5051079488994,
+          "y": 166.12126842284084
+        },
+        "data": {
+          "label": "Run",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_cc9af51f-211b-4bb6-a326-5221de1f1a04",
+              "name": "fk_Housing",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "b0d5e4e4-b4ec-4deb-9a43-a08405524bdd",
+                "sourceTableId": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+                "columns": [
+                  {
+                    "id": "fk_9c759ca7-e1d7-461d-b102-3c1f4636ceda",
+                    "name": "HousingId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "72e69cd1-77bf-40ce-a911-ee13e1abd380",
+              "name": "Size",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 76
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "0b12768e-99c3-4f66-84a8-55e66bda6950",
+        "type": "Table",
+        "position": {
+          "x": 1653.5096486780842,
+          "y": 268.9324736037756
+        },
+        "data": {
+          "label": "Suite",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_b63877f8-b49a-47ad-80d2-95c66db135c6",
+              "name": "fk_Housing",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "0626c706-e645-47b5-9597-9d85103f6297",
+                "sourceTableId": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+                "columns": [
+                  {
+                    "id": "fk_9c759ca7-e1d7-461d-b102-3c1f4636ceda",
+                    "name": "HousingId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "f6212727-bc22-43e6-b463-8331ba7ade46",
+              "name": "Accomodation",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 76
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "ebdef882-3059-4119-b3ea-6035471a2e6e",
+        "type": "Table",
+        "position": {
+          "x": 701.642986302427,
+          "y": 478.4351693038501
+        },
+        "data": {
+          "label": "Service",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "68ebf984-fb8d-404a-aaf8-036bb9af6200",
+              "name": "ServiceId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 51
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "b7841711-7e89-4e44-bd1d-ca3c3df51e3b",
+        "type": "Table",
+        "position": {
+          "x": 1313.2880630771585,
+          "y": 376.8381235204154
+        },
+        "data": {
+          "label": "Price",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "943837b5-de23-454b-bad0-52c7f0c5558a",
+              "name": "Medication",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "5a2a7195-ddc2-4a47-a2a7-9c81ea3dcf7a",
+              "name": "DogSmall",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "cac6f307-6bcf-4be6-8685-92bd55118972",
+              "name": "DogMedium",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "814e79fb-79ab-4fac-9bd7-2a2880cd0fe4",
+              "name": "DogLarge",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "1f7292b5-c1fb-4b41-a309-3b1e8abc2717",
+              "name": "CatRegular",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c8ede890-a14e-46b5-8266-9f0a595e9d09",
+              "name": "CatSemi-Luxury",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "684ce567-7c4b-445f-9b8f-fa739e984d92",
+              "name": "CatLuxury",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "d9729f9f-584c-4350-8a27-345c9797d801",
+              "name": "PriceID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false,
+          "isFactTable": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 224
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4ec7df0e-6479-486a-aaf4-99f6a11bb6b2",
+        "type": "Table",
+        "position": {
+          "x": 698.1715072814211,
+          "y": -9.558848984521816
+        },
+        "data": {
+          "label": "Medication",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "3fa468f6-1fe2-4980-85bd-3bf43b0a862b",
+              "name": "MedicationId",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_24106187-a3dc-4ae0-a05e-380a92fe7d31",
+              "name": "fk_Reservation Pet",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "8ded6dcc-700c-4db4-a205-14fb33de11c0",
+                "sourceTableId": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+                "columns": [
+                  {
+                    "id": "fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                    "name": "ReservationId",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "eb548296-eb25-4eeb-96ef-47ffa6f69c90",
+              "name": "Name",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7cadc0f8-15e2-4270-9135-a01796ce0519",
+              "name": "Frequency",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 142
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4b0f2736-cf3d-426e-a1a2-311fd25f6104",
+        "type": "Table",
+        "position": {
+          "x": 1491.1186424071875,
+          "y": -205.57272140960728
+        },
+        "data": {
+          "label": "PetVaccination",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_2fbd432d-7bd9-4564-972e-813ec6750956",
+              "name": "fk_Pet",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "718ca308-be10-4424-9a68-d9c3fcbfed6b",
+                "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+                "columns": [
+                  {
+                    "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "7a6b1b64-5a0f-40a8-98e1-776e746acadf",
+              "name": "Expiration Date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_5426b29d-3c90-45e1-8093-229b1f11a545",
+              "name": "fk_Vaccination",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f4dacf07-b9a0-4a42-8778-eb92f05f446b",
+                "sourceTableId": "68ee34bb-324e-45f9-93cf-6184373ed0bf",
+                "columns": [
+                  {
+                    "id": "fk_7197c0ba-4781-4196-baf4-873c92f7cb5e",
+                    "name": "VaccinationId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 101
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "f50d0d30-efef-453a-8349-de8d99b734ba",
+        "type": "Table",
+        "position": {
+          "x": 702.8252535648999,
+          "y": 323.3132654053612
+        },
+        "data": {
+          "label": "ReservationPetService",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_5088e2c6-590c-4834-b702-996136433fcc",
+              "name": "fk_Reservation Pet",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "14d97f41-7d20-4ef4-9b56-4ca6b9a810d8",
+                "sourceTableId": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+                "columns": [
+                  {
+                    "id": "fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                    "name": "ReservationId",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_6a9ba868-f598-4191-9ca4-c456d424b295",
+              "name": "fk_Service",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "450e7711-a08d-43b4-a809-437da9a98163",
+                "sourceTableId": "ebdef882-3059-4119-b3ea-6035471a2e6e",
+                "columns": [
+                  {
+                    "id": "fk_68ebf984-fb8d-404a-aaf8-036bb9af6200",
+                    "name": "ServiceId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 93
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "70d9c3bf-6cde-432a-ae11-c19bca99a7f5",
+        "type": "Table",
+        "position": {
+          "x": 390.5045711781829,
+          "y": 43.07353587330619
+        },
+        "data": {
+          "label": "MadicationDose",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "0556ae9c-6e44-4b97-bcc9-10022f182e40",
+              "name": "Time",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "ca65dcb4-0404-4904-af5b-74b6ebfe2848",
+              "name": "Dosage",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_c3b204d0-183a-4c2d-af19-6269219458f1",
+              "name": "fk_Medication",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "239df411-8d2f-493c-8b88-350a60876b9a",
+                "sourceTableId": "4ec7df0e-6479-486a-aaf4-99f6a11bb6b2",
+                "columns": [
+                  {
+                    "id": "fk_3fa468f6-1fe2-4980-85bd-3bf43b0a862b",
+                    "name": "MedicationId",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                    "name": "ReservationId",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                    "name": "PetId",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 133
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "a6315f96-f93b-4ee8-8dec-9d2f1af756da",
+        "type": "Table",
+        "position": {
+          "x": 1618.8131430912274,
+          "y": 379.3676381256724
+        },
+        "data": {
+          "label": "Discount",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "f19fbb36-563f-43c8-9877-1d3e11167986",
+              "name": "EmployeeDiscount",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "34ee72a3-8ea6-4617-a2fa-c93072d9b0f9",
+              "name": "SharedRunDiscount",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7ddc81ea-331d-4b7e-afe5-44b2f393849c",
+              "name": "DiscountID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "3ed5a089-2d02-4ccf-a9d1-5b82e7b693d6",
+              "name": "OwnFoodDiscount",
+              "type": "FLOAT",
+              "position": 0
+            },
+            {
+              "id": "c59fd25c-6c1f-4093-a641-90786c3a530a",
+              "name": "ThreeDogsDiscount",
+              "type": "FLOAT",
+              "position": 0
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 150
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "47d289d0-e965-4bb3-a96e-5c2bc887e305->5a989d39-1415-46bd-8fc7-1da0bd6635aa_095544ed-0dcf-4393-b962-77be37d86f80",
+        "type": "Relational",
+        "source": "47d289d0-e965-4bb3-a96e-5c2bc887e305",
+        "targetHandle": "foreign-key-handle-095544ed-0dcf-4393-b962-77be37d86f80",
+        "target": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "095544ed-0dcf-4393-b962-77be37d86f80",
+            "sourceTableId": "47d289d0-e965-4bb3-a96e-5c2bc887e305",
+            "columns": [
+              {
+                "id": "fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                "name": "ReservationId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "b2702adb-7553-4b77-b2da-e7b1851b53da->5a989d39-1415-46bd-8fc7-1da0bd6635aa_c759ef16-6729-4541-b0ba-dd60a16798c6",
+        "type": "Relational",
+        "source": "b2702adb-7553-4b77-b2da-e7b1851b53da",
+        "targetHandle": "foreign-key-handle-c759ef16-6729-4541-b0ba-dd60a16798c6",
+        "target": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "c759ef16-6729-4541-b0ba-dd60a16798c6",
+            "sourceTableId": "b2702adb-7553-4b77-b2da-e7b1851b53da",
+            "columns": [
+              {
+                "id": "fk_336dc3ad-8831-4d51-85c5-bf16c320b89b",
+                "name": "FoodId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "90f866e4-ca08-4872-bd06-c9e8ec48713e->5a989d39-1415-46bd-8fc7-1da0bd6635aa_cfaef9e4-f4b2-4035-a767-08be4248d776",
+        "type": "Relational",
+        "source": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+        "targetHandle": "foreign-key-handle-cfaef9e4-f4b2-4035-a767-08be4248d776",
+        "target": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "cfaef9e4-f4b2-4035-a767-08be4248d776",
+            "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+            "columns": [
+              {
+                "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a->5a989d39-1415-46bd-8fc7-1da0bd6635aa_0d110e21-8d0c-4801-ac2b-9568aef9ae10",
+        "type": "Relational",
+        "source": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+        "targetHandle": "foreign-key-handle-0d110e21-8d0c-4801-ac2b-9568aef9ae10",
+        "target": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "0d110e21-8d0c-4801-ac2b-9568aef9ae10",
+            "sourceTableId": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+            "columns": [
+              {
+                "id": "fk_9c759ca7-e1d7-461d-b102-3c1f4636ceda",
+                "name": "HousingId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "b0f3b295-0e7f-42fb-abef-7e605c578dfa->fae923a4-00a1-4ed3-abe1-a9309b2429fe_0bfb23d0-1cb8-421d-b449-042fe0bc5b94",
+        "type": "Relational",
+        "source": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+        "targetHandle": "foreign-key-handle-0bfb23d0-1cb8-421d-b449-042fe0bc5b94",
+        "target": "fae923a4-00a1-4ed3-abe1-a9309b2429fe",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "0bfb23d0-1cb8-421d-b449-042fe0bc5b94",
+            "sourceTableId": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+            "columns": [
+              {
+                "id": "fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                "name": "UserId",
+                "type": "INT"
+              }
+            ]
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "b0f3b295-0e7f-42fb-abef-7e605c578dfa->4d5bf7be-06fa-4846-bf5e-0fcf687d9c07_e1184450-ffb7-4b80-80ab-fda72c7464f0",
+        "type": "Relational",
+        "source": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+        "targetHandle": "foreign-key-handle-e1184450-ffb7-4b80-80ab-fda72c7464f0",
+        "target": "4d5bf7be-06fa-4846-bf5e-0fcf687d9c07",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "e1184450-ffb7-4b80-80ab-fda72c7464f0",
+            "sourceTableId": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+            "columns": [
+              {
+                "id": "fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                "name": "UserId",
+                "type": "INT"
+              }
+            ]
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "b0f3b295-0e7f-42fb-abef-7e605c578dfa->12511030-e9aa-4e98-86fd-420e896a067a_29e104ea-f2d7-4732-ae6d-5e0f09f19265",
+        "type": "Relational",
+        "source": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+        "targetHandle": "foreign-key-handle-29e104ea-f2d7-4732-ae6d-5e0f09f19265",
+        "target": "12511030-e9aa-4e98-86fd-420e896a067a",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "29e104ea-f2d7-4732-ae6d-5e0f09f19265",
+            "sourceTableId": "b0f3b295-0e7f-42fb-abef-7e605c578dfa",
+            "columns": [
+              {
+                "id": "fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                "name": "UserId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "90f866e4-ca08-4872-bd06-c9e8ec48713e->ee31f18e-6122-4018-adcc-aa1fd38a81eb_7caed885-e4df-460f-a472-a751f939d085",
+        "type": "Relational",
+        "source": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+        "targetHandle": "foreign-key-handle-7caed885-e4df-460f-a472-a751f939d085",
+        "target": "ee31f18e-6122-4018-adcc-aa1fd38a81eb",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "7caed885-e4df-460f-a472-a751f939d085",
+            "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+            "columns": [
+              {
+                "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "90f866e4-ca08-4872-bd06-c9e8ec48713e->7d636325-7ce8-4eb8-8db7-7cddc06c487e_2f815479-3395-4a4a-a9b6-7f9f67acbb25",
+        "type": "Relational",
+        "source": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+        "targetHandle": "foreign-key-handle-2f815479-3395-4a4a-a9b6-7f9f67acbb25",
+        "target": "7d636325-7ce8-4eb8-8db7-7cddc06c487e",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "2f815479-3395-4a4a-a9b6-7f9f67acbb25",
+            "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+            "columns": [
+              {
+                "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a->eead93d4-eb57-4bb2-b1bc-c8e08a824498_b0d5e4e4-b4ec-4deb-9a43-a08405524bdd",
+        "type": "Relational",
+        "source": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+        "targetHandle": "foreign-key-handle-b0d5e4e4-b4ec-4deb-9a43-a08405524bdd",
+        "target": "eead93d4-eb57-4bb2-b1bc-c8e08a824498",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "b0d5e4e4-b4ec-4deb-9a43-a08405524bdd",
+            "sourceTableId": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+            "columns": [
+              {
+                "id": "fk_9c759ca7-e1d7-461d-b102-3c1f4636ceda",
+                "name": "HousingId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a->0b12768e-99c3-4f66-84a8-55e66bda6950_0626c706-e645-47b5-9597-9d85103f6297",
+        "type": "Relational",
+        "source": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+        "targetHandle": "foreign-key-handle-0626c706-e645-47b5-9597-9d85103f6297",
+        "target": "0b12768e-99c3-4f66-84a8-55e66bda6950",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "0626c706-e645-47b5-9597-9d85103f6297",
+            "sourceTableId": "bf6956fd-ff1b-42bb-b00e-4c60e2cc049a",
+            "columns": [
+              {
+                "id": "fk_9c759ca7-e1d7-461d-b102-3c1f4636ceda",
+                "name": "HousingId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "12511030-e9aa-4e98-86fd-420e896a067a->90f866e4-ca08-4872-bd06-c9e8ec48713e_409e37f9-983b-4adc-98a3-acb91e844fcc",
+        "type": "Relational",
+        "source": "12511030-e9aa-4e98-86fd-420e896a067a",
+        "targetHandle": "foreign-key-handle-409e37f9-983b-4adc-98a3-acb91e844fcc",
+        "target": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "409e37f9-983b-4adc-98a3-acb91e844fcc",
+            "sourceTableId": "12511030-e9aa-4e98-86fd-420e896a067a",
+            "columns": [
+              {
+                "id": "fk_fk_38f6eef3-7b70-48c0-af0e-57e64bfc07c4",
+                "name": "UserId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "47d289d0-e965-4bb3-a96e-5c2bc887e305->cc308112-a3fc-431a-b120-773cff140e7a_663ad40e-5860-45a5-a859-23835927f342",
+        "type": "Relational",
+        "source": "47d289d0-e965-4bb3-a96e-5c2bc887e305",
+        "targetHandle": "foreign-key-handle-663ad40e-5860-45a5-a859-23835927f342",
+        "target": "cc308112-a3fc-431a-b120-773cff140e7a",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "663ad40e-5860-45a5-a859-23835927f342",
+            "sourceTableId": "47d289d0-e965-4bb3-a96e-5c2bc887e305",
+            "columns": [
+              {
+                "id": "fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                "name": "ReservationId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "90f866e4-ca08-4872-bd06-c9e8ec48713e->4b0f2736-cf3d-426e-a1a2-311fd25f6104_718ca308-be10-4424-9a68-d9c3fcbfed6b",
+        "type": "Relational",
+        "source": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+        "targetHandle": "foreign-key-handle-718ca308-be10-4424-9a68-d9c3fcbfed6b",
+        "target": "4b0f2736-cf3d-426e-a1a2-311fd25f6104",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "718ca308-be10-4424-9a68-d9c3fcbfed6b",
+            "sourceTableId": "90f866e4-ca08-4872-bd06-c9e8ec48713e",
+            "columns": [
+              {
+                "id": "fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "68ee34bb-324e-45f9-93cf-6184373ed0bf->4b0f2736-cf3d-426e-a1a2-311fd25f6104_f4dacf07-b9a0-4a42-8778-eb92f05f446b",
+        "type": "Relational",
+        "source": "68ee34bb-324e-45f9-93cf-6184373ed0bf",
+        "targetHandle": "foreign-key-handle-f4dacf07-b9a0-4a42-8778-eb92f05f446b",
+        "target": "4b0f2736-cf3d-426e-a1a2-311fd25f6104",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f4dacf07-b9a0-4a42-8778-eb92f05f446b",
+            "sourceTableId": "68ee34bb-324e-45f9-93cf-6184373ed0bf",
+            "columns": [
+              {
+                "id": "fk_7197c0ba-4781-4196-baf4-873c92f7cb5e",
+                "name": "VaccinationId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "5a989d39-1415-46bd-8fc7-1da0bd6635aa->4ec7df0e-6479-486a-aaf4-99f6a11bb6b2_8ded6dcc-700c-4db4-a205-14fb33de11c0",
+        "type": "Relational",
+        "source": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "targetHandle": "foreign-key-handle-8ded6dcc-700c-4db4-a205-14fb33de11c0",
+        "target": "4ec7df0e-6479-486a-aaf4-99f6a11bb6b2",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "8ded6dcc-700c-4db4-a205-14fb33de11c0",
+            "sourceTableId": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+            "columns": [
+              {
+                "id": "fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                "name": "ReservationId",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "5a989d39-1415-46bd-8fc7-1da0bd6635aa->49c685c7-6b43-4c59-b16b-7e8394ed87b0_7279a8f0-5442-4576-9a2c-614f865dc07c",
+        "type": "Relational",
+        "source": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "targetHandle": "foreign-key-handle-7279a8f0-5442-4576-9a2c-614f865dc07c",
+        "target": "49c685c7-6b43-4c59-b16b-7e8394ed87b0",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "7279a8f0-5442-4576-9a2c-614f865dc07c",
+            "sourceTableId": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+            "columns": [
+              {
+                "id": "fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                "name": "ReservationId",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "5a989d39-1415-46bd-8fc7-1da0bd6635aa->f50d0d30-efef-453a-8349-de8d99b734ba_14d97f41-7d20-4ef4-9b56-4ca6b9a810d8",
+        "type": "Relational",
+        "source": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+        "targetHandle": "foreign-key-handle-14d97f41-7d20-4ef4-9b56-4ca6b9a810d8",
+        "target": "f50d0d30-efef-453a-8349-de8d99b734ba",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "14d97f41-7d20-4ef4-9b56-4ca6b9a810d8",
+            "sourceTableId": "5a989d39-1415-46bd-8fc7-1da0bd6635aa",
+            "columns": [
+              {
+                "id": "fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                "name": "ReservationId",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "ebdef882-3059-4119-b3ea-6035471a2e6e->f50d0d30-efef-453a-8349-de8d99b734ba_450e7711-a08d-43b4-a809-437da9a98163",
+        "type": "Relational",
+        "source": "ebdef882-3059-4119-b3ea-6035471a2e6e",
+        "targetHandle": "foreign-key-handle-450e7711-a08d-43b4-a809-437da9a98163",
+        "target": "f50d0d30-efef-453a-8349-de8d99b734ba",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "450e7711-a08d-43b4-a809-437da9a98163",
+            "sourceTableId": "ebdef882-3059-4119-b3ea-6035471a2e6e",
+            "columns": [
+              {
+                "id": "fk_68ebf984-fb8d-404a-aaf8-036bb9af6200",
+                "name": "ServiceId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4ec7df0e-6479-486a-aaf4-99f6a11bb6b2->70d9c3bf-6cde-432a-ae11-c19bca99a7f5_239df411-8d2f-493c-8b88-350a60876b9a",
+        "type": "Relational",
+        "source": "4ec7df0e-6479-486a-aaf4-99f6a11bb6b2",
+        "targetHandle": "foreign-key-handle-239df411-8d2f-493c-8b88-350a60876b9a",
+        "target": "70d9c3bf-6cde-432a-ae11-c19bca99a7f5",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "239df411-8d2f-493c-8b88-350a60876b9a",
+            "sourceTableId": "4ec7df0e-6479-486a-aaf4-99f6a11bb6b2",
+            "columns": [
+              {
+                "id": "fk_3fa468f6-1fe2-4980-85bd-3bf43b0a862b",
+                "name": "MedicationId",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fk_b27aaf56-2777-4e91-8c29-a1d7b2a71fbb",
+                "name": "ReservationId",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fk_fa4488b7-cf89-4c3a-af61-9561d807735b",
+                "name": "PetId",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 123.51990262276229,
+      "y": 226.56841675184796,
+      "zoom": 0.5048218259779937
+    }
+  },
+  "name": "Team3_J10_A02_Logical-Diagram",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 26768
+  },
+  "id": 97361,
+  "updatedAtTimestamp": 1760048650
+}
