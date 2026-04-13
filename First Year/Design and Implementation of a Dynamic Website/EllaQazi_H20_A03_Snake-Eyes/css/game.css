@@ -1,0 +1,106 @@
+body {
+    background-color: #02120b;
+    background-image: url("../images/snakeEyeBG.png");
+    background-size: 25px;
+    background-repeat: repeat;
+    color: #a8ad8b;
+    font-size: 100%;
+}
+
+a {
+    color: #a8ad8b;
+}
+
+#gameArea {
+    background-color: #0a2715;
+    border: 3px solid #577842;
+    display: float;
+    margin: auto;
+    width: 75vw;
+    height: 50vh;
+    padding: 2%;
+    box-shadow: 1vw 1vw #1d4c1e;
+}
+
+#gameForm {
+    justify-content: center;
+    text-align: center;
+
+    ul {
+        justify-content: center;
+
+        li {
+            display: inline;
+        }
+    }
+
+}
+
+#diceAndInfoDiv {
+    width: 100%;
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#diceAndRollDiv {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    align-self: stretch;
+}
+
+#diceRollDiv {
+    justify-content: center;
+    text-align: center;
+}
+
+.infoDiv {
+    justify-content: center;
+    text-align: center;
+
+    ul {
+        list-style: "*      ";
+    }
+}
+
+#result {
+    color: #a8ad8b;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+#diceDiv {
+    justify-content: center;
+    text-align: center;
+}
+
+#changeUserDiv {
+    justify-content: center;
+    text-align: center;
+}
+
+.diceImg {
+    height: 100px;
+    display: inline;
+}
+
+@media all and (min-width: 1024px) {
+    .diceImg {
+        height: 200px;
+    }
+
+    #diceDiv {
+        padding: 25px
+    }
+}
+
+@media all and (min-width: 2560px) {
+    #gameArea {
+        width: 50vw;
+        height: 25vh;
+    }
+}

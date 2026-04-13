@@ -1,0 +1,22 @@
+body {
+    background-color: #02120b;
+    background-image: url("../images/snakeEyeBG.png");
+    background-size: 25px;
+    background-repeat: repeat;
+    color: #a8ad8b;
+    font-size: 100%;
+}
+
+a {
+    color: #a8ad8b;
+}
+
+h2 {
+    justify-self: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+p {
+    justify-self: center;
+}

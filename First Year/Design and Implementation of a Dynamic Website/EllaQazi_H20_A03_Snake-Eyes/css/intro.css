@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    background-color: #02120b;
+    background-image: url("../images/snakeEyeBG.png");
+    background-size: 25px;
+    background-repeat: repeat;
+    color: #a8ad8b;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#userFormDiv {
+    display: inline;
+    padding: 20px;
+    align-self: center;
+}
+
+form {
+    display: block;
+    background-color: #0a2715;
+    border: 3px solid #577842;
+    box-shadow: 1vw 1vw #1d4c1e;
+    padding: 20px;
+    width: 50vw;
+    align-self: center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.errorDiv {
+    color: #577842;
+}

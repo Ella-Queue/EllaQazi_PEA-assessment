@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Eyes Showdown</title>
+    <link href="css/game.css" rel="stylesheet" type="text/css">
+    <link href="css/basic.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img id="leftDecor" src="images/LeftSnakeEye.png" alt="Left snake eye" height="150px">
+        <h1><img src="images/SnakeEyesShowdownTitle.png" alt="Snake Eyes Showdown" height="200px"></h1>
+        <img id="rightDecor" src="images/RIghtSnakeEye.png" alt="Right snake eye" height="150px">
+    </header>
+    <div id="gameForm">
+        <form>
+            <ul>
+                <li id="betInput">
+                    <label for="bet">Bet :</label>
+                    <input type="text" id="bet" name="bet">
+                </li>
+                <li id="guessForm">
+                    <label for="guess">Guess Number: </label>
+                    <input type="text" id="guess" name="guess">
+                </li>
+                <li id="gameSubmit">
+                    <button type="submit">Submit</button>
+                </li>
+                <li>
+                    <p id="gameFormErr"></p>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div id="gameArea">
+        <p id="result">RESULT</p>
+        <div id="diceAndInfoDiv">
+            <div id="userInfoDiv" class="infoDiv">
+                <ul>
+                    <li>Name:</li>
+                    <li id="nameListItem"></li>
+                    <li>Username:</li>
+                    <li id="userListItem"></li>
+                    <li>Phone Number:</li>
+                    <li id="pNumListItem"></li>
+                    <li>City:</li>
+                    <li id="cityListItem"></li>
+                    <li>Email Address:</li>
+                    <li id="emailListItem"></li>
+                </ul>
+            </div>
+
+            <div id="diceAndRollDiv">
+                <div id="diceDiv">
+                    <img id="dice1Img" class="diceImg" src="images/DiceAnimation/Dice1.png" alt="die1">
+                    <img id="dice2Img" class="diceImg" src="images/DiceAnimation/Dice1.png" alt="die2">
+                </div>
+                <div id="diceRollDiv">
+                    <button type="button" id="startButton">Roll Dice</button>
+                </div>
+            </div>
+
+            <div id="gameInfoDiv" class="infoDiv">
+                <ul>
+                    <li>Total Money:</li>
+                    <li id="moneyTotalListItem"></li>
+                    <li>Bet:</li>
+                    <li id="betListItem"></li>
+                    <li>Dice 1:</li>
+                    <li id="dice1ListItem"></li>
+                    <li>Dice 2:</li>
+                    <li id="dice2ListItem"></li>
+                    <li>Dice Total</li>
+                    <li id="diceTotalListItem"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="changeUserDiv">
+            <span id="lastTime"></span>
+            <p>Not you? <a id="changeUserAnchor" href="intro.html">change user</a></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+        integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/additional-methods.min.js"
+        integrity="sha512-TiQST7x/0aMjgVTcep29gi+q5Lk5gVTUPE9XgN0g96rwtjEjLpod4mlBRKWHeBcvGBAEvJBmfDqh2hfMMmg+5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

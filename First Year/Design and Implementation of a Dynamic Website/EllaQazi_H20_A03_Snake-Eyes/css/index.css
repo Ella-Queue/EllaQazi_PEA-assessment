@@ -1,0 +1,91 @@
+body {
+    background-color: #02120b;
+    background-image: url("../images/snakeEyeBG.png");
+    background-size: 25px;
+    background-repeat: repeat;
+}
+
+img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+main {
+    justify-self: center;
+    padding-bottom: 100px;
+    animation-name: changeColour;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+}
+
+button {
+    background-color: #a8ad8b;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 60%;
+
+}
+
+canvas {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(360deg) scaleY(-1);
+    visibility: hidden;
+    animation-name: showCanvas;
+    animation-duration: 3s;
+}
+
+@keyframes changeColour {
+    0% {
+        background-color: #a8ad8b;
+    }
+
+    50% {
+        background-color: #577842;
+    }
+
+    100% {
+        background-color: #a8ad8b;
+    }
+}
+
+@keyframes showCanvas {
+    0% {
+        visibility: visible;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    main {
+        width: 80%;
+        height: 30%;
+    }
+    img {
+        width: 80%;
+        height: 20%;
+    }
+}
